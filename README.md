@@ -6,6 +6,6 @@ This challenge was to design and build a static webpage that could be used as a 
 
 ## Installation
 
-This repo can be downloaded at
+This repo can be downloaded at https://github.com/broden123/week2challenge
 
 ## Credits
