@@ -1,0 +1,49 @@
+:root {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  --backgroundcolor: cadetblue;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2%;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3.5%;
+  background-color: var(--backgroundcolor);
+  color: white;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  min-width: 400px;
+  list-style-type: none;
+}
+
+header nav a {
+  text-decoration: none;
+  color: white;
+}
+
+.card {
+  flex: 1 0 200px;
+  padding: 0px;
+  text-align: left;
+}
+
+.card header {
+  padding: 0px;
+  background: var(--backgroundcolor);
+  color: #fff;
+}
