@@ -73,15 +73,33 @@ main {
 
 .workbox {
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: column;
   font-weight: bold;
   text-align: center;
+  width: 75%;
 }
 
 .work1,
 .work2 {
-  border: 2px solid black;
-  margin: 10px;
+  border: 10px solid black;
+  margin: 0x;
+  padding: 0px;
+  flex-basis: auto;
+}
+
+.work1 img,
+.work2 img {
+  width: 75%;
+}
+
+.work1 {
+  flex-grow: 1.5;
+  flex-basis: 1;
+  flex-shrink: 1;
+}
+
+.work2 {
+  flex-grow: 1;
 }
 
 @media all and (min-width: 600px) {
