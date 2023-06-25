@@ -3,6 +3,14 @@
   --backgroundcolor: cadetblue;
 }
 
+/* body {
+  background-image: url("../images/circuitboard.jpg");
+  background-color: #cccccc;
+  height: 3000px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+*/
 main {
   display: flex;
   flex-wrap: wrap;
@@ -35,14 +43,61 @@ header nav a {
   color: white;
 }
 
-.card {
-  flex: 1 0 200px;
-  padding: 0px;
-  text-align: left;
+main {
+  display: flex;
+  flex-direction: column;
 }
 
-.card header {
-  padding: 0px;
-  background: var(--backgroundcolor);
-  color: #fff;
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+}
+
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.main {
+  text-align: left;
+  background: deepskyblue;
+  border-left: 5px solid black;
+}
+
+.aside-1 {
+  background: gold;
+  font-size: 46px;
+}
+
+.workbox {
+  display: flex;
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+}
+
+.work1,
+.work2 {
+  border: 2px solid black;
+  margin: 10px;
+}
+
+@media all and (min-width: 600px) {
+  .aside {
+    flex: 1 0 0;
+  }
+}
+
+@media all and (min-width: 800px) {
+  .main {
+    flex: 3 0px;
+  }
+  .aside-1 {
+    order: 1;
+  }
+  .main {
+    order: 2;
+  }
 }
