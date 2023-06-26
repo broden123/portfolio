@@ -18,4 +18,4 @@ All images used sourced from https://www.pexels.com
 
 ## Preview
 
-![Website Preview](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+![Website Preview](https://github.com/broden123/week2challenge/blob/main/assets/images/preview.JPG)
