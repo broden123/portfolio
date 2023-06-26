@@ -15,3 +15,7 @@ Code to help set up the flex boxes was obtained from https://css-tricks.com/snip
 code to use nested flexbox obtained from https://www.quackit.com/css/flexbox/tutorial/nested_flex_containers.cfm
 
 All images used sourced from https://www.pexels.com
+
+## Preview
+
+![Website Preview](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
