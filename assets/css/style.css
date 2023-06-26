@@ -3,14 +3,14 @@
   --backgroundcolor: cadetblue;
 }
 
-/* body {
+body {
   background-image: url("../images/circuitboard.jpg");
   background-color: #cccccc;
   height: 3000px;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: repeat-y round;
 }
-*/
+
 main {
   display: flex;
   flex-wrap: wrap;
@@ -24,6 +24,7 @@ main {
   padding: 3.5%;
   background-color: var(--backgroundcolor);
   color: white;
+  font-weight: bold;
 }
 
 h1 {
@@ -42,6 +43,10 @@ header nav a {
   text-decoration: none;
   color: white;
 }
+.me img {
+  width: 80px;
+  height: 100px;
+}
 
 main {
   display: flex;
@@ -53,6 +58,7 @@ main {
   flex-flow: row wrap;
   font-weight: bold;
   text-align: center;
+  margin-bottom: 5%;
 }
 
 .wrapper > * {
@@ -62,44 +68,61 @@ main {
 
 .main {
   text-align: left;
-  background: deepskyblue;
+  color: white;
   border-left: 5px solid black;
 }
 
 .aside-1 {
-  background: gold;
+  color: white;
   font-size: 46px;
 }
 
 .workbox {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
   font-weight: bold;
-  text-align: center;
-  width: 75%;
+  box-align: center;
+  align-items: center;
+  box-pack: center;
+  justify-content: center;
 }
 
 .work1,
 .work2 {
   border: 10px solid black;
-  margin: 0x;
+  margin: 2px;
   padding: 0px;
   flex-basis: auto;
+  transition: transform 0.5s;
 }
 
 .work1 img,
 .work2 img {
-  width: 75%;
+  width: 100%;
+  max-width: fit-content;
 }
 
 .work1 {
-  flex-grow: 1.5;
-  flex-basis: 1;
-  flex-shrink: 1;
+  flex-basis: 90%;
+  max-width: 100%;
+  justify-content: center;
 }
 
 .work2 {
-  flex-grow: 1;
+  flex-basis: 45%;
+  box-sizing: border-box;
+}
+
+.work1:hover,
+.work2:hover {
+  transform: scale(1.02);
+}
+
+main div a {
+  text-decoration: underline;
+  color: white;
+  font-size: 36px;
 }
 
 @media all and (min-width: 600px) {
